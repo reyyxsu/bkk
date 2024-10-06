@@ -23,6 +23,7 @@ class Admin extends CI_Controller {
         parent::__construct();
         $this->load->model('M_siswa'); // Memuat model
 		$this->load->model('M_perusahaan'); // Memuat model
+
     }
 
 	public function dashboard()
