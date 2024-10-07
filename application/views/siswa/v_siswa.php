@@ -75,17 +75,17 @@
 
             <div class="form-group">
                 <label>Upload Foto Pas</label>
-                <input type="file" name="foto_pas" class="form-control">
+                <input type="file" name="foto_pas" class="form-control" required>
             </div>
 
             <div class="form-group">
                 <label>Upload Foto Ijazah</label>
-                <input type="file" name="foto_ijazah" class="form-control">
+                <input type="file" name="foto_ijazah" class="form-control" required>
             </div>
 
             <div class="form-group">
                 <label>Upload Foto SK Pekerjaan</label>
-                <input type="file" name="foto_sk_kerja" class="form-control">
+                <input type="file" name="foto_sk_kerja" class="form-control" required>
             </div>
 
         <button type="reset" class="btn btn-danger" data-dismiss="modal">Keluar</button>
