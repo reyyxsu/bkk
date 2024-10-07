@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 05, 2024 at 09:05 PM
+-- Generation Time: Oct 07, 2024 at 06:06 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -20,24 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_bkk`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `admin`
---
-
-CREATE TABLE `admin` (
-  `username` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `admin`
---
-
-INSERT INTO `admin` (`username`, `password`) VALUES
-('admin', '47b7dd29668b37731110543945aa1e9d');
 
 -- --------------------------------------------------------
 
@@ -61,7 +43,8 @@ CREATE TABLE `data_perusahaan` (
 
 INSERT INTO `data_perusahaan` (`id`, `nama_perusahaan`, `nama_hrd`, `telepon_hrd`, `nik`, `alamat_perusahaan`, `email`) VALUES
 (1, 'PT Bringin Gigantara', 'Ariyal Zarhan', '082112071288', '737110696969', 'Jakarta Selatan', 'falenikospreigratis@yahoo.com'),
-(2, 'PT Astra Metal', 'Faleniko Wowontoro', '12345', '234567', 'Cikarang Barat', 'jeanlhas40@gmail.com');
+(2, 'PT Astra Metal', 'Faleniko Wowontoro', '12345', '234567', 'Cikarang Barat', 'akunakspreigratis@yahoo.com'),
+(3, 'CV Trireka', 'Muhammad Fatur Imaniaji', '0821234567', '3456789', 'Perumahan Danau Duta', 'trireka@fatur.com');
 
 -- --------------------------------------------------------
 
@@ -88,15 +71,28 @@ INSERT INTO `data_siswa` (`id`, `nama`, `alamat`, `tb`, `bb`, `pendidikan_terakh
 (8, 'Muhammad Atallah', 'Perumahan Wisma Asri', '175', '76', 'SMK Negeri 5 Kota Bekasi'),
 (9, 'Bryllent Arcielio Lim', 'Perumahan Wisma Asri', '176', '65', 'SMK Negeri 1 Jomokerto');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(10) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `password`) VALUES
+(1, 'admin_bkk', '47b7dd29668b37731110543945aa1e9d');
+
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `admin`
---
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`username`);
 
 --
 -- Indexes for table `data_perusahaan`
@@ -111,6 +107,12 @@ ALTER TABLE `data_siswa`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -118,13 +120,19 @@ ALTER TABLE `data_siswa`
 -- AUTO_INCREMENT for table `data_perusahaan`
 --
 ALTER TABLE `data_perusahaan`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `data_siswa`
 --
 ALTER TABLE `data_siswa`
   MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
