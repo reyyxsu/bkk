@@ -47,7 +47,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form method = "post" action="<?php echo base_url('siswa/tambah_aksi') ?>">
+      <form action="<?= base_url('siswa/tambah_aksi'); ?>" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <label>Nama Siswa</label>
                 <input type="text" name="nama" class="form-control" required>
@@ -71,6 +71,21 @@
             <div class="form-group">
                 <label>Pendidikan Terakhir</label>
                 <input type="text" name="pendidikan_terakhir" class="form-control"required>
+            </div>
+
+            <div class="form-group">
+                <label>Upload Foto Pas</label>
+                <input type="file" name="foto_pas" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Upload Foto Ijazah</label>
+                <input type="file" name="foto_ijazah" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Upload Foto SK Pekerjaan</label>
+                <input type="file" name="foto_sk_kerja" class="form-control">
             </div>
 
         <button type="reset" class="btn btn-danger" data-dismiss="modal">Keluar</button>
