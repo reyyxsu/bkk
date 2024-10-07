@@ -47,6 +47,7 @@
     <div class="card-footer">
         <button type="reset" class="btn btn-danger">Reset</button>
         <button type="submit" class="btn btn-primary">Simpan</button>
+        <a href="<?php echo base_url('siswa/index'); ?>" class="btn btn-primary">Kembali</a>
     </div>
 </form>
 
