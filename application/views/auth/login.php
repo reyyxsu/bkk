@@ -75,7 +75,7 @@
         }
 
         /* Gaya responsif */
-        @media (max-width: 768px) {
+        @media (max-width: 768px) { 
             .login-container {
                 padding: 20px;
             }
