@@ -22,9 +22,54 @@ class Siswa extends CI_Controller
         $tb = $this->input->post('tb');
         $bb = $this->input->post('bb');
         $pendidikan_terakhir = $this->input->post('pendidikan_terakhir');
-
+        
+        // Setup konfigurasi upload
+        $config['upload_path'] = './assets/foto';
+        $config['allowed_types'] = 'jpg|png|gif';
+        $config['max_size'] = 2048; // Ukuran maksimal dalam KB (misalnya 2MB)
+    
+        // Upload Foto Pas
+        $this->load->library('upload', $config);
+        $foto_pas = $_FILES['foto_pas']['name'];
+        if (!empty($foto_pas)) {
+            $config['file_name'] = time() . "_" . $foto_pas; // Ganti nama file agar unik
+            $this->upload->initialize($config);
+            if (!$this->upload->do_upload('foto_pas')) {
+                $error = $this->upload->display_errors();
+                echo "Upload Gagal: " . $error; die(); // Tampilkan pesan error upload
+            } else {
+                $foto_pas = $this->upload->data('file_name');
+            }
+        }
+    
+        // Upload Foto Ijazah
+        $foto_ijazah = $_FILES['foto_ijazah']['name'];
+        if (!empty($foto_ijazah)) {
+            $config['file_name'] = time() . "_" . $foto_ijazah; // Ganti nama file agar unik
+            $this->upload->initialize($config);
+            if (!$this->upload->do_upload('foto_ijazah')) {
+                $error = $this->upload->display_errors();
+                echo "Upload Gagal: " . $error; die(); // Tampilkan pesan error upload
+            } else {
+                $foto_ijazah = $this->upload->data('file_name');
+            }
+        }
+    
+        // Upload Foto SK Kerja
+        $foto_sk_kerja = $_FILES['foto_sk_kerja']['name'];
+        if (!empty($foto_sk_kerja)) {
+            $config['file_name'] = time() . "_" . $foto_sk_kerja; // Ganti nama file agar unik
+            $this->upload->initialize($config);
+            if (!$this->upload->do_upload('foto_sk_kerja')) {
+                $error = $this->upload->display_errors();
+                echo "Upload Gagal: " . $error; die(); // Tampilkan pesan error upload
+            } else {
+                $foto_sk_kerja = $this->upload->data('file_name');
+            }
+        }
+    
         // Validasi input kosong
-        if (empty($nama) || empty($alamat) || empty($tb) || empty($bb) || empty($pendidikan_terakhir)) {
+        if (empty($nama) || empty($alamat) || empty($tb) || empty($bb) || empty($pendidikan_terakhir) || empty($foto_pas) || empty($foto_ijazah) || empty($foto_sk_kerja)) {
             $this->session->set_flashdata('error', 'Semua data wajib diisi');
             redirect('siswa/index');
         } else {
@@ -34,15 +79,19 @@ class Siswa extends CI_Controller
                 'tb' => $tb,
                 'bb' => $bb,
                 'pendidikan_terakhir' => $pendidikan_terakhir,
+                'foto_pas' => $foto_pas,
+                'foto_ijazah' => $foto_ijazah,
+                'foto_sk_kerja' => $foto_sk_kerja,
             );
-
+    
+            // Masukkan data ke database
             $this->M_siswa->input_data($data, 'data_siswa');
             redirect('siswa/index');
         }
     }
+    
 
-    public function hapus($id)
-    {
+    public function hapus($id) {
         $where = array('id' => $id);
         $this->M_siswa->hapus_data($where, 'data_siswa');
         redirect('siswa/index');
@@ -88,10 +137,8 @@ class Siswa extends CI_Controller
             redirect('siswa/index');  // Redirect ke halaman index setelah update
         }
     }
-    
 
-    public function detail($id)
-    {
+    public function detail($id) {
         // Ambil detail data berdasarkan ID
         $detail = $this->M_siswa->detail_data($id);
         $data['detail'] = $detail;
