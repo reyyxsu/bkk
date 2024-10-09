@@ -57,37 +57,16 @@ class Siswa extends CI_Controller
     
         // Upload Foto SK Kerja
         $foto_sk_kerja = $_FILES['foto_sk_kerja']['name'];
-
-        // Periksa apakah ada file yang diunggah
         if (!empty($foto_sk_kerja)) {
             $config['file_name'] = time() . "_" . $foto_sk_kerja; // Ganti nama file agar unik
             $this->upload->initialize($config);
-
-            // Jika upload gagal
             if (!$this->upload->do_upload('foto_sk_kerja')) {
                 $error = $this->upload->display_errors();
-                echo "Upload Gagal: " . $error;
-                die(); // Tampilkan pesan error upload dan hentikan proses
+                echo "Upload Gagal: " . $error; die(); // Tampilkan pesan error upload
             } else {
                 $foto_sk_kerja = $this->upload->data('file_name');
             }
-        } else {
-            // Jika tidak ada file yang diunggah, beri nilai kosong atau default
-            $foto_sk_kerja = null;
         }
-
-        // Proses penyimpanan data tetap berjalan meskipun foto tidak diunggah
-        $data = [
-            'foto_sk_kerja' => $foto_sk_kerja,
-            // Data lain yang ingin disimpan
-        ];
-
-        // Contoh menyimpan data ke database (sesuaikan dengan model Anda)
-        $this->model_nama->simpanData($data);
-
-        // Tampilkan pesan sukses atau redirect ke halaman lain
-        echo "Data berhasil disubmit!";
-
     
         // Validasi input kosong
         if (empty($nama) || empty($alamat) || empty($tb) || empty($bb) || empty($pendidikan_terakhir) || empty($foto_pas) || empty($foto_ijazah) || empty($foto_sk_kerja)) {
