@@ -90,36 +90,32 @@
       <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
         <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
         <div>
-          <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a></h4>
-          <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat tarad limino ata</p>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">PT. Cabinindo Putra</a></h4>
+          <p class="description">PT. Cabinindo Putra adalah Perusahaan Manufacturing Aluminuim Die Casting & Injection part yang pada setiap proses produksi mengutamakan SQCDM.</p>
         </div>
       </div><!-- End Service Item -->
 
       <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
         <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
         <div>
-          <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
-          <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur</p>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">PT Inti Ganda Perdana</a></h4>
+          <p class="description">PT. Inti Ganda Perdana seorang produser poros gandar belakang dan poros baling-baling, dan menjadi produsen poros penggerak dan gardan penggerak yang andal, dengan visi menjadi perusahaan yang memiliki keunggulan kompetitif di pasar global.</p>
         </div>
       </div><!-- End Service Item -->
 
       <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
         <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
         <div>
-          <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
-          <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum</p>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">PT Mayora Indah Tbk</a></h4>
+          <p class="description">PT. Mayora Indah Tbk. (Perseroan) didirikan pada tahun 1977 dengan pabrik pertama berlokasi di Tangerang dengan target market wilayah Jakarta dan sekitarnya. Sebagai salah satu Fast Moving Consumer Goods Companies, PT. Mayora Indah Tbk. telah membuktikan dirinya sebagai salah satu produsen makanan berkualitas tinggi.</p>
         </div>
       </div><!-- End Service Item -->
 
       <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
         <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
         <div>
-          <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>
-          <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-            praesentium voluptatum deleniti atque</p>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">PT Sebastian Jaya metal</a></h4>
+          <p class="description">PT. Sebastian Jaya Metal adalah perusahaan yang memproduksi komponen kendaraan bermotor roda dua & empat.</p>
         </div>
       </div><!-- End Service Item -->
 
