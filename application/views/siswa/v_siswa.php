@@ -85,7 +85,7 @@
 
             <div class="form-group">
                 <label>Upload Foto SK Pekerjaan</label>
-                <input type="file" name="foto_sk_kerja" class="form-control" required>
+                <input type="file" name="foto_sk_kerja" class="form-control" >
             </div>
 
         <button type="reset" class="btn btn-danger" data-dismiss="modal">Keluar</button>
