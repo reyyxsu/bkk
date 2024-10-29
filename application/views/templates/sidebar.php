@@ -45,6 +45,12 @@
         </a>
     </li>
 
+    <li class="<?php echo ($this->uri->segment(1) == 'pesan_masuk') ? 'active' : ''; ?>">
+        <a href="<?php echo base_url('pesan/index'); ?>">
+              <i class="fa fa-envelope"></i> <span>Kelola Pesan Masuk</span>
+        </a>
+    </li>
+
     <li>
         <a href="<?php echo base_url('auth/logout'); ?>">
             <i class="fa fa-sign-out"></i> <span>Log Out</span>

@@ -1,10 +1,8 @@
-
 <main class="main">
-
 <!-- Hero Section -->
 <section id="hero" class="hero section dark-background">
 
-  <img src="assets/img/hero-bg.jpg" class="hero-bg" alt="" data-aos="fade-in">
+  <img src="<?php echo base_url(); ?>assets/img/hero-bg.jpg" class="hero-bg" alt="" data-aos="fade-in">
 
   <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
     <!-- ===
@@ -14,8 +12,8 @@
     <h2>Selamat Datang di Situs BKK SMKN 5 Kota Bekasi</h2>
     <p>Temukan Pekerjaan Sesuai Keinginanmu <span class="typed" data-typed-items="Terpecaya, Fleksibel "></span></p>
     <div>
-      <a href="#about" class="cta-btn">Get Started</a>
-      <a href="#services" class="cta-btn2">Our Services</a>
+      <a href="#about" class="cta-btn2">Ingin dikenalkan calon pekerja? Langsung klik sini saja!</a>
+      <a href="#services" class="cta-btn2">Mencari pekerjaan? Langsung klik sini saja!</a>
     </div>
   </div>
 
@@ -39,7 +37,7 @@
     <div class="row gy-4">
 
       <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-        <img src="assets/img/daftar.jpg" class="img-fluid" alt="">
+        <img src="<?php echo base_url(); ?>assets/img/daftar.jpg" class="img-fluid" alt="">
       </div>
 
       <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
@@ -134,402 +132,6 @@
 
 </section><!-- /Services Section -->
 
-<!-- Features Section -->
-<section id="features" class="features section">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Features</h2>
-    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-  </div><!-- End Section Title -->
-
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-        <div class="feature-box orange">
-          <i class="bi bi-award"></i>
-          <h4>Corporis voluptates</h4>
-          <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-        </div>
-      </div><!-- End Feature Borx-->
-
-      <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-        <div class="feature-box blue">
-          <i class="bi bi-patch-check"></i>
-          <h4>Explicabo consectetur</h4>
-          <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
-        </div>
-      </div><!-- End Feature Borx-->
-
-      <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-        <div class="feature-box green">
-          <i class="bi bi-sunrise"></i>
-          <h4>Ullamco laboris</h4>
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-        </div>
-      </div><!-- End Feature Borx-->
-
-      <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-        <div class="feature-box red">
-          <i class="bi bi-shield-check"></i>
-          <h4>Labore consequatur</h4>
-          <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-        </div>
-      </div><!-- End Feature Borx-->
-
-    </div>
-
-  </div>
-
-</section><!-- /Features Section -->
-
-<!-- Call To Action Section -->
-<section id="call-to-action" class="call-to-action section dark-background">
-
-  <img src="assets/img/cta-bg.jpg" alt="">
-
-  <div class="container">
-
-    <div class="row" data-aos="zoom-in" data-aos-delay="100">
-      <div class="col-xl-9 text-center text-xl-start">
-        <h3>Call To Action</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.</p>
-      </div>
-      <div class="col-xl-3 cta-btn-container text-center">
-        <a class="cta-btn align-middle" href="#">Call To Action</a>
-      </div>
-    </div>
-
-  </div>
-
-</section><!-- /Call To Action Section -->
-
-<!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Portfolio</h2>
-    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-  </div><!-- End Section Title -->
-
-  <div class="container">
-
-    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-        <li data-filter="*" class="filter-active">All</li>
-        <li data-filter=".filter-app">App</li>
-        <li data-filter=".filter-product">Product</li>
-        <li data-filter=".filter-branding">Branding</li>
-        <li data-filter=".filter-books">Books</li>
-      </ul><!-- End Portfolio Filters -->
-
-      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-          <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
-              class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-          <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Product 1</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product"
-              class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-          <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Branding 1</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1"
-              data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-          <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Books 1</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book"
-              class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-          <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>App 2</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app"
-              class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-          <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Product 2</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product"
-              class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-          <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Branding 2</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2"
-              data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-          <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Books 2</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book"
-              class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-          <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>App 3</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app"
-              class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-          <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Product 3</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product"
-              class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-          <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Branding 3</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2"
-              data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-          <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Books 3</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-            <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book"
-              class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                class="bi bi-link-45deg"></i></a>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-      </div><!-- End Portfolio Container -->
-
-    </div>
-
-  </div>
-
-</section><!-- /Portfolio Section -->
-
-<!-- Testimonials Section -->
-<section id="testimonials" class="testimonials section">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Testimonials</h2>
-    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="swiper init-swiper">
-      <script type="application/json" class="swiper-config">
-        {
-          "loop": true,
-          "speed": 600,
-          "autoplay": {
-            "delay": 5000
-          },
-          "slidesPerView": "auto",
-          "pagination": {
-            "el": ".swiper-pagination",
-            "type": "bullets",
-            "clickable": true
-          }
-        }
-      </script>
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <div class="row gy-4 justify-content-center">
-              <div class="col-lg-6">
-                <div class="testimonial-content">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                      Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at
-                      semper.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 text-center">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
-              </div>
-            </div>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <div class="row gy-4 justify-content-center">
-              <div class="col-lg-6">
-                <div class="testimonial-content">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum
-                      eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim
-                      culpa.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 text-center">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
-              </div>
-            </div>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <div class="row gy-4 justify-content-center">
-              <div class="col-lg-6">
-                <div class="testimonial-content">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam
-                      duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 text-center">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
-              </div>
-            </div>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <div class="row gy-4 justify-content-center">
-              <div class="col-lg-6">
-                <div class="testimonial-content">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat
-                      minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore
-                      illum veniam.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 text-center">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
-              </div>
-            </div>
-          </div>
-        </div><!-- End testimonial item -->
-
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-  </div>
-
-</section><!-- /Testimonials Section -->
-
 <!-- Team Section -->
 <section id="team" class="team section">
 
@@ -546,7 +148,7 @@
       <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
         <div class="team-member">
           <div class="member-img">
-            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+            <img src="<?php echo base_url(); ?>assets/img/team/team-1.jpg" class="img-fluid" alt="">
             <div class="social">
               <a href=""><i class="bi bi-twitter-x"></i></a>
               <a href=""><i class="bi bi-facebook"></i></a>
@@ -564,7 +166,7 @@
       <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
         <div class="team-member">
           <div class="member-img">
-            <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+            <img src="<?php echo base_url(); ?>assets/img/team/team-2.jpg" class="img-fluid" alt="">
             <div class="social">
               <a href=""><i class="bi bi-twitter-x"></i></a>
               <a href=""><i class="bi bi-facebook"></i></a>
@@ -582,7 +184,7 @@
       <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
         <div class="team-member">
           <div class="member-img">
-            <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+            <img src="<?php echo base_url(); ?>assets/img/team/team-3.jpg" class="img-fluid" alt="">
             <div class="social">
               <a href=""><i class="bi bi-twitter-x"></i></a>
               <a href=""><i class="bi bi-facebook"></i></a>
@@ -600,7 +202,7 @@
       <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
         <div class="team-member">
           <div class="member-img">
-            <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+            <img src="<?php echo base_url(); ?>assets/img/team/team-4.jpg" class="img-fluid" alt="">
             <div class="social">
               <a href=""><i class="bi bi-twitter-x"></i></a>
               <a href=""><i class="bi bi-facebook"></i></a>
@@ -627,7 +229,7 @@
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Contact</h2>
-    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    <p>Hubungi Kami Untuk Informasi Lebih lanjut!</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade" data-aos-delay="100">
@@ -658,46 +260,43 @@
             <p>info@example.com</p>
           </div>
         </div><!-- End Info Item -->
-
       </div>
-
-      <div class="col-lg-8">
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-          data-aos-delay="200">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+      <?php if (!empty($pesan)) : ?>
+    <?php foreach ($pesan as $psn): ?>
+        <!-- Jika $pesan tidak kosong, tampilkan sesuatu atau ubah form di sini -->
+    <?php endforeach; ?>
+<?php else: ?>
+    <!-- Jika $pesan kosong, tampilkan form default -->
+    <div class="col-lg-8">
+        <form action="<?php echo base_url('users/tambah_aksi'); ?>" method="post">
+            <div class="row gy-4">
+                <div class="col-md-6">
+                    <label for="nama_pengirim">Nama Lengkap Anda</label>
+                    <input type="text" id="nama_pengirim" name="nama_pengirim" class="form-control" placeholder="Maksimal 50 abjad" maxlength="50" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email_pengirim">Email Anda</label>
+                    <input type="email" id="email_pengirim" name="email_pengirim" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="subjek_pesan">Subjek Pesan Anda</label>
+                    <input type="text" id="subjek_pesan" name="subjek_pesan" class="form-control" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="pesan">Isi Pesan Anda</label>
+                    <textarea id="pesan" name="pesan" class="form-control" rows="4" required></textarea>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                </div>
             </div>
-
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
-
-          </div>
         </form>
-      </div><!-- End Contact Form -->
-
     </div>
+<?php endif; ?>
 
+      </div><!-- End Contact Form -->
+    </div>
   </div>
-
 </section><!-- /Contact Section -->
 
 </main>
@@ -773,17 +372,17 @@
 <div id="preloader"></div>
 
 <!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/typed.js/typed.umd.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/vendor/php-email-form/validate.js"></script>
+<script src="<?php echo base_url(); ?>assets/vendor/aos/aos.js"></script>
+<script src="<?php echo base_url(); ?>assets/vendor/typed.js/typed.umd.js"></script>
+<script src="<?php echo base_url(); ?>assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/vendor/swiper/swiper-bundle.min.js"></script>
 
 <!-- Main JS File -->
-<script src="assets/js/main.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/main.js"></script>
 
 </body>
 

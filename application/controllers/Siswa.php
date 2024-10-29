@@ -25,7 +25,7 @@ class Siswa extends CI_Controller
         
         // Setup konfigurasi upload
         $config['upload_path'] = './assets/foto';
-        $config['allowed_types'] = 'jpg|png|gif';
+        $config['allowed_types'] = 'jpg|jpeg|png|gif';
         $config['max_size'] = 2048; // Ukuran maksimal dalam KB (misalnya 2MB)
     
         // Upload Foto Pas
