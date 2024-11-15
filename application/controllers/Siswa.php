@@ -24,7 +24,7 @@ class Siswa extends CI_Controller
         $pendidikan_terakhir = $this->input->post('pendidikan_terakhir');
         
         // Setup konfigurasi upload
-        $config['upload_path'] = './assets/foto';
+        $config['upload_path'] = './assets/foto_siswa';
         $config['allowed_types'] = 'jpg|jpeg|png|gif';
         $config['max_size'] = 2048; // Ukuran maksimal dalam KB (misalnya 2MB)
     
@@ -69,7 +69,7 @@ class Siswa extends CI_Controller
         }
     
         // Validasi input kosong
-        if (empty($nama) || empty($alamat) || empty($tb) || empty($bb) || empty($pendidikan_terakhir) || empty($foto_pas) || empty($foto_ijazah) || empty($foto_sk_kerja)) {
+        if (empty($nama) || empty($alamat) || empty($tb) || empty($bb) || empty($pendidikan_terakhir) || empty($foto_pas) || empty($foto_ijazah)) {
             $this->session->set_flashdata('error', 'Semua data wajib diisi');
             redirect('siswa/index');
         } else {

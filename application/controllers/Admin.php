@@ -24,6 +24,12 @@ class Admin extends CI_Controller {
         $this->load->model('M_siswa'); // Memuat model
 		$this->load->model('M_perusahaan'); // Memuat model
 
+        // Cek apakah pengguna sudah login
+        if (!$this->session->userdata('logged_in')) {
+            // Jika belum login, arahkan ke halaman login
+            redirect('auth/login');
+        }
+
     }
 
 	public function dashboard()

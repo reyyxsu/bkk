@@ -10,16 +10,30 @@ class Auth extends CI_Controller {
 
     public function index()
     {
-        $this->load->view('auth/login');
+        // Cek jika pengguna sudah login, redirect ke dashboard
+        if ($this->session->userdata('logged_in')) {
+            redirect('admin/dashboard');
+        } else {
+            $this->load->view('auth/login');
+        }
     }
 
     public function login() {
+        // Cek jika pengguna sudah login, redirect ke dashboard
+        if ($this->session->userdata('logged_in')) {
+            redirect('admin/dashboard');
+        }
+
         // Validasi input form
         $this->form_validation->set_rules('username', 'Username', 'required');
         $this->form_validation->set_rules('password', 'Password', 'required');
     
         // Jika validasi gagal, kembali ke halaman login
         if ($this->form_validation->run() == FALSE) {
+            // Mencegah cache pada halaman login
+            $this->output->set_header('Cache-Control: no-store, no-cache, must-revalidate');
+            $this->output->set_header('Cache-Control: post-check=0, pre-check=0', false);
+            $this->output->set_header('Pragma: no-cache');
             $this->load->view('auth/login'); // Tampilkan halaman login
         } else {
             // Ambil data dari form
@@ -50,20 +64,12 @@ class Auth extends CI_Controller {
             }
         }
     }
-    
 
-
-    public function logout()
-{
-    // Hapus data sesi pengguna
-    $this->session->unset_userdata('user_id');
-    $this->session->unset_userdata('username');
-    $this->session->unset_userdata('logged_in');
-
-    // Atau bisa juga menggunakan $this->session->sess_destroy() untuk menghapus semua sesi
-    $this->session->sess_destroy();
-
-    // Redirect ke halaman login atau halaman lain yang diinginkan
-    redirect('auth/login'); // Ganti dengan route yang sesuai
-}
+    public function logout() {
+        // Hapus semua data sesi
+        $this->session->sess_destroy();
+ 
+        // Redirect ke halaman login setelah logout
+        redirect('auth/login');
+    }
 }
